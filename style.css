@@ -1,0 +1,129 @@
+:root {
+  --cor-principal: #bcedcf;
+  --verde: #2ea45c;
+  --cor-secundaria: #5c515b;
+  --cor-brackground: #a49f9d;
+  --preto: #222020;
+  --branco: #f0f0f0;
+  --fonte-principal: "Anton";
+  --fonte-secundaria: "DM Sans";
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.head-cabeca {
+  width: 120px;
+  header: auto;
+  position: static;
+  
+  margin-left: auto;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: var(--cor-secundaria);
+  padding: 10px 0;
+  font-family: var(--fonte-secundaria);
+  border-radius: 8px;
+  margin: 60px;
+  justify-content: center;
+}
+
+.menu ul li {
+  margin: 0 15px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: var(--branco);
+  font-size: 16px;
+  padding: 5px 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container__item:hover {
+  background-color: var(--verde);
+  color: var(--branco);
+  border-radius: 5px;
+}
+.container__nav-inicio {
+  background-color: var(--verde);
+  color: var(--branco);
+  border-radius: 5px;
+  padding: 5px 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.container__nav-inicio:hover {
+  background-color: var(--cor-principal);
+  color: var(--cor-secundaria);
+  border-radius: 5px;
+  padding: 5px 10px;
+  
+}
+.container__home {
+  position: relative; /* Define o ponto de referência para elementos filhos absolutos */
+  display: flex;
+  align-items: center;
+  justify-content: center;}
+
+.container__home-imagem {
+  border-radius: 16px; 
+  max-width: 100%; 
+  width: 100%; 
+  max-width: 1700px; 
+  margin: 0 auto; 
+  display: block; 
+  
+}
+.container__motorista, .container__motorista2, .container__motorista3, .container__motorista4 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: auto;
+  border-radius: 16px;
+  padding: 10px 20px;
+  font-family: var(--fonte-secundaria);
+  color: #f0f0f0;
+}
+.container__motorista {
+  top: 150px;
+  left: 350px;
+}
+
+.container__motorista2 {
+  bottom: 150px;
+  right: 350px;
+}
+
+.container__motorista3 {
+  top: 150px;
+  right: 350px;
+}
+
+.container__motorista4 {
+  bottom: 150px;
+  left: 350px;
+}
+
+.foto-motorista {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.foto-motorista {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  object-fit: cover;
+ 
+}
+
