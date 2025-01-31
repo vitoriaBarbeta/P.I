@@ -71,6 +71,7 @@ header {
 .container__home {
   position: relative; /* Define o ponto de referência para elementos filhos absolutos */
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;}
 
@@ -78,6 +79,7 @@ header {
   border-radius: 16px; 
   max-width: 100%; 
   width: 100%; 
+  object-fit: cover;
   max-width: 1700px; 
   margin: 0 auto; 
   display: block; 
@@ -114,16 +116,35 @@ header {
 }
 
 .foto-motorista {
-  width: 100px;
+  width: 250px;
   height: auto;
   border-radius: 50%;
   margin-right: 10px;
 }
-.foto-motorista {
-  width: 240px;
-  height: 240px;
-  border-radius: 50%;
-  object-fit: cover;
- 
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--cor-brackground);
+  border: none;
+  padding: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 100%;
+
+}
+
+#prev {
+  left: 10px;
+}
+
+#next {
+  right: 10px;
+}
+
+.arrow:hover {
+  background: rgba(0, 0, 0, 0.8);
 }
 
