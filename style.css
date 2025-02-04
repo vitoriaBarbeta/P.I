@@ -19,7 +19,7 @@ header {
   width: 120px;
   header: auto;
   position: static;
-  
+
   margin-left: auto;
 }
 
@@ -66,26 +66,28 @@ header {
   color: var(--cor-secundaria);
   border-radius: 5px;
   padding: 5px 10px;
-  
 }
 .container__home {
   position: relative; /* Define o ponto de referência para elementos filhos absolutos */
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;}
+  justify-content: center;
+}
 
 .container__home-imagem {
-  border-radius: 16px; 
-  max-width: 100%; 
-  width: 100%; 
+  border-radius: 16px;
+  max-width: 100%;
+  width: 100%;
   object-fit: cover;
-  max-width: 1700px; 
-  margin: 0 auto; 
-  display: block; 
-  
+  max-width: 1700px;
+  margin: 0 auto;
+  display: block;
 }
-.container__motorista, .container__motorista2, .container__motorista3, .container__motorista4 {
+.container__motorista,
+.container__motorista2,
+.container__motorista3,
+.container__motorista4 {
   position: absolute;
   display: flex;
   align-items: center;
@@ -94,31 +96,40 @@ header {
   padding: 10px 20px;
   font-family: var(--fonte-secundaria);
   color: #f0f0f0;
+  font-size: 1em;
 }
 .container__motorista {
   top: 150px;
   left: 350px;
+
 }
 
 .container__motorista2 {
   bottom: 150px;
   right: 350px;
+
 }
 
 .container__motorista3 {
   top: 150px;
   right: 350px;
+
 }
 
 .container__motorista4 {
   bottom: 150px;
   left: 350px;
+
 }
 
 .foto-motorista {
-  width: 250px;
-  height: auto;
+ 
+  display: flex;
+  align-items: center;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
+  
   margin-right: 10px;
 }
 
@@ -126,25 +137,29 @@ header {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
-  color: var(--cor-brackground);
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
   border: none;
-  padding: 20px;
+  padding: 15px;
   cursor: pointer;
-  font-size: 20px;
-  border-radius: 100%;
-
+  font-size: 24px;
+  border-radius: 50%;
 }
 
 #prev {
-  left: 10px;
+  left: 230px;
 }
 
 #next {
-  right: 10px;
+  right: 230px;
 }
 
 .arrow:hover {
   background: rgba(0, 0, 0, 0.8);
 }
 
+@media (max-width: 768px) {
+  .carousel-track {
+    flex-wrap: wrap; /* Quebra os elementos para melhor ajuste */
+  }
+}
